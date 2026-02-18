@@ -31,3 +31,5 @@ console.log("hitesh")
 
 console.log(typeof undefined)//undefined
 console.log(typeof null)//object
+// undefined → value not assigned yet
+// null → value intentionally set to nothing
