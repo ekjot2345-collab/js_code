@@ -34,3 +34,6 @@ console.log(mytimestamp);
 
 console.log(myDate.toLocaleString('default',{weekday:'long',year:'numeric',month:'long',day:'numeric'}));
 
+//The instant at the midnight at the beginning of January 1, 1970, UTC is called the epoch.
+
+// The Date object range is -100,000,000 days to 100,000,000 days relative to the epoch.
