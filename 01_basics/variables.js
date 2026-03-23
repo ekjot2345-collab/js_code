@@ -17,3 +17,5 @@ console.table([accountId,accountEmail,accountPassword,accountState])
 /*
 prefer not to use var due to some scope reasons
  */
+
+
