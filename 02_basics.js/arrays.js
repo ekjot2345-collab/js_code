@@ -43,3 +43,5 @@ console.log("b",myArry )
 const myn2=myArry.splice(1,3) //it will change the original array
 console.log(myn2)
 console.log( "c",myArry)
+
+
