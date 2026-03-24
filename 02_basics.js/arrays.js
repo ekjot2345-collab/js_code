@@ -13,7 +13,7 @@ console.log(myFavSingers[2])
 
 //ARRAY METTHODS
 
-// myArr2.push(60)
+//  myArr2.push(60)
 // myArr2.push(70)
 // myArr2.pop()
     // myArr2.unshift(0)  //need to shift all the values to right and add 0 at the start of the array
@@ -36,4 +36,10 @@ console.log(typeof newArr);
 
 
 //slice,spice
+const myn1= myArry.slice(1,3) //it will not change the original array
+console.log(myn1)
+console.log("b",myArry )
 
+const myn2=myArry.splice(1,3) //it will change the original array
+console.log(myn2)
+console.log( "c",myArry)
