@@ -6,7 +6,7 @@
 // because every ####object literal## creates a new object.
 
 
-//Whereas singleton means:
+//Whereas singleton means:                  // constructor
 // const a = getInstance();
 // const b = getInstance();
 
