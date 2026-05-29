@@ -21,7 +21,8 @@ const JsEkjot={
     age:25,
     location:"san francisco",
     "fullname":"Ekjot Singh",
-    mySym:"key1"
+    mySym:"krish3",// it is not being used as a symbol
+    [mySym]:"myValue" // this is how we can use symbol as a key in the object
 }
 console.log(JsEkjot.name)
 console.log(JsEkjot.age)
@@ -29,4 +30,26 @@ console.log(JsEkjot["location"])
 console.log(JsEkjot["fullname"])// we can access the keys with dot notation or with bracket notation
 // we can access this full name through only bracket notation
 //  because it has doubouble quotes while intializing in the object.
-console.log(JsEkjot.mySym) // this will print key1 because we have defined mySym as a key in the object
+
+
+
+console.log(JsEkjot.mySym) // this will print krish3 because we have defined mySym as a key in the object
+
+console.log(typeof JsEkjot.mySym) // this will print "string" because the key "mySym" in the object holds the string 'krish3'///string
+
+
+console.log(JsEkjot[mySym]) // this will print myValue because we have defined mySym as a symbol key in the object
+
+
+
+// console.log(JsEkjot)
+
+JsEkjot.location="India"
+console.log(JsEkjot.location) // this will print "India" because we have changed the value of location key in the object
+
+
+Object.freeze(JsEkjot) // this will freeze the object and we cannot change any value in the object
+
+JsEkjot.location="USA" // this will not change the location because the object is frozen
+console.log(JsEkjot.location) // this will print "India" because the object is frozen and we cannot change any value in the object
+
