@@ -19,3 +19,20 @@ prefer not to use var due to some scope reasons
  */
 
 
+function processOrder(isPaid) {
+  if (isPaid) {
+    var status = "paid";
+  }
+
+  console.log(status); // "paid" — var escapes the if block
+}
+
+function processOrder(isPaid) {
+  if (isPaid) {
+    let status = "paid";
+    console.log(status); // works
+  }
+
+  console.log(status); // Error — status exists only inside the if block
+}
+

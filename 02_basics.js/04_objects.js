@@ -61,7 +61,7 @@ const course = {
 }
 
 // course.courseInstructor
-
+//object destructuring
 const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);
@@ -73,8 +73,10 @@ console.log(instructor);
 //     "price": "free"
 // }
 
-[
-    {},
-    {},
-    {}
-]
+// const navbar =({company})   in react we can use this syntax to destructure the props object and get the company property directly
+// {
+//     name: "hitesh",
+//     coursename: "js",
+//     price: "free"
+
+// }
